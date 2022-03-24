@@ -1,0 +1,13 @@
+(PART) Part II How to Conduct Open Psychological Science{-}
+
+# Preregistration
+
+Some _significant_ applications are demonstrated in this chapter.
+
+## Registered Reports
+
+## Preregistered Analysis Plans
+
+### Open Science Framework
+
+### AsPredicted.org
