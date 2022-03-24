@@ -1,3 +1,5 @@
 # Promise
 
+Too important not to do better...
+
 This chapter describes the promise of open psychological science.

@@ -1,4 +1,4 @@
-# (PART) Part I Why Open Psychological Science{-}
+# (PART) Why Open Psychological Science{-}
 
 # History {#history}
 
@@ -14,6 +14,10 @@ The fraudulent research practices of social psychologist Diederik Stapel
 ### Low power
 
 ### Little data- or materials sharing
+
+### File-drawer Effect
+
+### Positive results bias
 
 ### Problems with inferential techniques
 

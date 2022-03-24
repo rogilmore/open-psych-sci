@@ -1,4 +1,4 @@
-(PART) Part II How to Conduct Open Psychological Science{-}
+# (PART) How to Conduct Open Psychological Science {-}
 
 # Preregistration
 
@@ -57,8 +57,6 @@ knitr::include_graphics("img/as-predicted-4.jpg")
 - Mike Frank (former skeptic, now advocate), ["Pregister everything"](http://babieslearninglanguage.blogspot.com/2016/07/preregister-everything.html)
 
 - Preregistration can constrain the data analysis process, but...
-
----
 
 >"To investigate whether,in psychology, preregistration lives up to that potential, we focused on all article spublished in Psychological Science with a preregisteredbadge between February 2015 and November 2017, and assessed the adherence to their corresponding preregistration plans. We observed deviations from the plan in all studies, and, more importantly, in all but one study, at least one of these deviations was not fully disclosed."
 

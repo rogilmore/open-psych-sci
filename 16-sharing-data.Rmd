@@ -2,6 +2,8 @@
 
 ## Preparing data for sharing
 
+> "You can pay me now, or you can pay me later."
+
 ### Post-hoc curation
 
 ### Active curation
@@ -39,6 +41,12 @@
 #### PeekBank
 
 #### OpenNeuro
+
+### Commercial data repositories
+
+#### FigShare
+
+#### Mendeley Data
 
 ## Data management plans
 

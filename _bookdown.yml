@@ -2,4 +2,9 @@ book_filename: "open-psych-sci"
 language:
   ui:
     chapter_name: "Chapter "
+  label:
+    fig: "Figure "
+    tab: "Table "
 delete_merged_file: true
+output_dir: "_book"
+repo: https://github.com/rogilmore/open-psych-sci
