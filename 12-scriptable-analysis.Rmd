@@ -1,2 +1,7 @@
 # Scriptable analysis
 
+Reproducible workflows
+
+http://datasci.kitzes.com/lessons/python/reproducible_workflow.html
+http://grunwaldlab.github.io/Reproducible-science-in-R/index.html
+

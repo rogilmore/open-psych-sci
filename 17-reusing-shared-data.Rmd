@@ -1,0 +1,30 @@
+# Reusing data
+
+## Government or institutional repositories
+
+### NIMH Data Archive
+
+### NSF Data
+
+## Domain-general repositories
+
+### [Databrary](https://databrary.org)
+
+### Inter-University Consortium for Political and Social Research (ICPSR)
+
+### [Open Science Framework (OSF)](https://osf.io)
+
+## Domain-specific repositories
+
+### Qualitative Data Repository (QDR)
+
+### [TalkBank](https://talkbank.org)
+
+### WordBank
+
+### PeekBank
+
+
+
+
+

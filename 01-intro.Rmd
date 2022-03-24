@@ -2,3 +2,24 @@
 
 # History {#history}
 
+Flawed science:
+The fraudulent research practices of social psychologist Diederik Stapel
+
+<https://pure.mpg.de/rest/items/item_1569964_8/component/file_1569966/content>
+
+## Challenges
+
+### Reproducibility in question
+
+### Low power
+
+### Little data- or materials sharing
+
+### Problems with inferential techniques
+
+#### NHST
+
+#### Generalizability crisis (Yarkoni)
+
+### Limited cumulative theory-building
+

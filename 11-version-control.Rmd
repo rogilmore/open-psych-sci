@@ -1,3 +1,17 @@
 # Version control
 
-We have finished a nice book.
+## What is it?
+
+## How does version control work
+
+## Tools for version control
+
+### On your local machine
+
+### For collaboration
+
+#### GitHub
+
+#### GitLab
+
+

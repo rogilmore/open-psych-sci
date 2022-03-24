@@ -1,4 +1,28 @@
 # FAIR data
 
+Data should be...
 
+- **F**indable
+- **A**ccessible
+- **I**nteroperable
+- **R**eusable
 
+[Wilkinson et al. 2016](https://doi.org/10.1038/sdata.2016.18)
+
+- Data in interoperable formats (.txt or .csv)
+- Scripted, automated = minimize human-dependent steps.
+- Well-documented
+- Kind to your future (forgetful) self
+- Transparent to me & colleagues == transparent to others
+
+## File naming, variable naming
+
+File naming (Optional)
+http://guides.nyu.edu/data_management/file_org
+http://kbroman.org/dataorg/
+
+## Tidy Data
+
+Wickham, H. (2014). Tidy Data. Journal of Statistical Software, 59(10). http://dx.doi.org/10.18637/jss.v059.i10.
+
+## Data dictionaries/code books

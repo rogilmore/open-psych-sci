@@ -1,0 +1,32 @@
+# Large-scale replications
+
+## Many Labs
+
+```{r, fig.cap="[Klein et al. 2014](http://econtent.hogrefe.com/doi/abs/10.1027/1864-9335/a000178)"}
+knitr::include_graphics("https://econtent.hogrefe.com/na101/home/literatum/publisher/hogrefe/journals/content/zsp/2014/zsp.2014.45.issue-3/1864-9335_a000178/20150727/images/large/zsp_45_3_142_fig1a.jpeg")
+```
+
+## Reproducibility Project: Psychology (RPP)
+
+> "*...The mean effect size (r) of the replication effects...was half the magnitude of the mean effect size of the original effects...*"
+
+<small>[Open Science Collaboration, 2015](http://science.sciencemag.org/content/349/6251/aac4716)</small>
+
+> "*...39% of effects were subjectively rated to have replicated the original result...*"
+
+<small>[Open Science Collaboration, 2015](http://science.sciencemag.org/content/349/6251/aac4716)</small>
+
+```{r, fig.cap="[Camerer et al. 2018](https://www.nature.com/articles/s41562-018-0399-z)"}
+knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/fg4d3/?action=download%26mode=render%26direct%26public_file=True&initialWidth=698&childId=mfrIframe&parentTitle=OSF+%7C+F1+-+EffectSizes.png&parentUrl=https://osf.io/fg4d3/&format=2400x2400.jpeg")
+```
+
+```{r, fig.cap="[Camerer et al. 2018](https://www.nature.com/articles/s41562-018-0399-z)"}
+knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/8pc9x/?action=download%26mode=render%26direct%26public_file=True&initialWidth=698&childId=mfrIframe&parentTitle=OSF+%7C+F4+-+PeerBeliefs.png&parentUrl=https://osf.io/8pc9x/&format=2400x2400.jpeg")
+```
+
+### If it's too good to be true, it probably isn't
+
+<https://80000hours.org/psychology-replication-quiz/>
+
+## Psychological Science Accelerator
+

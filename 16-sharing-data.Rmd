@@ -1,0 +1,97 @@
+# Sharing data and materials
+
+## Preparing data for sharing
+
+### Post-hoc curation
+
+### Active curation
+
+## Where to share data and materials
+
+### Project-specific data repositories
+
+### Government or institutional repositories
+
+#### NIMH Data Archive
+
+#### Institutional repositories
+
+#### NSF Data
+
+### Domain-general repositories
+
+#### [Databrary](https://databrary.org)
+
+#### Inter-University Consortium for Political and Social Research (ICPSR)
+
+#### DataDryad
+
+#### Dataverse
+
+### Domain-specific repositories
+
+#### Qualitative Data Repository (QDR)
+
+#### TalkBank
+
+#### WordBank
+
+#### PeekBank
+
+#### OpenNeuro
+
+## Data management plans
+
+### NIH
+
+#### [Current policy](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-03-032.html)
+
+Starting with the October 1, 2003 receipt date, investigators submitting an NIH application seeking $500,000 or more in direct costs in any single year are expected to include a plan for data sharing or state why data sharing is not possible.
+
+#### [New policy, effective January 25, 2023](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-013.html)
+
+#### Resources
+
+<https://grants.nih.gov/grants/policy/data_sharing/data_sharing_guidance.htm>
+
+<https://www.nationalacademies.org/our-work/changing-the-culture-of-data-management-and-sharing-a-workshop>
+
+#### [Elements](https://grants.nih.gov/grants/guide/notice-files/NOT-OD-21-014.html)
+
+- 1-2 pp
+- Data type(s)
+- Related Tools, Software and/or Code
+- Standards
+- Data Preservation, Access, and Associated Timelines
+- Access, Distribution, or Reuse Considerations
+- Oversight of Data Management and Sharing
+
+### National Science Foundation Public Access Repository (NSF-PAR)
+
+<https://par.nsf.gov>
+
+### Resources
+
+- [Data Management Tookit](https://guides.libraries.psu.edu/dmptoolkit)
+
+### Frequently Asked Questions (FAQs)
+
+#### What is/is not data?
+
+The recorded factual material commonly accepted in the scientific community as of sufficient quality to validate and replicate research findings, regardless of whether the data are used to support scholarly publications.
+
+Scientific data do not include laboratory notebooks, preliminary analyses, completed case report forms, drafts of scientific papers, plans for future research, peer reviews, communications with colleagues, or physical objects, such as laboratory specimens.
+
+#### When to consider?
+
+We encourage investigators to consider, while developing their Plans, how to address data management and sharing in the informed consent process, such that prospective participants will understand what is expected to happen with their data
+
+“[s]hared scientific data should be made accessible as soon as possible, and no later than the time of an associated publication, or the end of the award/support period, whichever comes first.”
+
+#### Where to share?
+
+The final DMS Policy strongly encourages the use of established repositories to the extent possible. This reflects NIH’s preference that scientific data be shared and preserved through repositories, rather than kept only by the researcher or institution and provided on request, with the recognition that this is not always a practical or even a preferred approach.
+
+#### How to pay for
+
+Personnel costs required to perform the types of data management and sharing activities described in the final Supplemental Information are allowable. Regarding the availability of data beyond the end of the project, which is crucial to achieving the goals of the DMS Policy, the final Supplemental Information clarifies that fees for long-term data preservation and sharing are allowable but funds for these activities must be spent during the performance period, even for scientific data and metadata preserved and shared beyond the award period. NIH funds cannot legally be spent after the award period.

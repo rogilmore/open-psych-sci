@@ -4,13 +4,25 @@
 
 ### PsychoPy
 
+<http://www.psychopy.org>
+
 ### Psychophysics Toolbox
+
+<http://psychtoolbox.org>
 
 ## Online
 
+### Pavlovia
+
+<https://github.com/psu-psychology/psychopy_pavlovia_workshop>
+
 ### Mechanical Turk
 
+<https://psiturk.org>
+
 ### jsPsych
+
+<https://www.jspsych.org/7.2/>
 
 ### LookIt
 
