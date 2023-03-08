@@ -28,5 +28,6 @@ knitr::include_graphics("https://mfr.osf.io/export?url=https://osf.io/8pc9x/?act
 
 <https://80000hours.org/psychology-replication-quiz/>
 
+## ManyBabies
 ## Psychological Science Accelerator
 
