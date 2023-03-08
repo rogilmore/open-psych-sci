@@ -1,3 +1,9 @@
+bookdown::bs4_book:
+  css: include/css/style.css
+  theme:
+    primary: "#096B72"
+    code_folding: hide
+  repo: 'https://github.com/rogilmore/open-psych-sci'
 bookdown::gitbook:
   css: style.css
   config:
@@ -6,7 +12,7 @@ bookdown::gitbook:
         <li><a href="./">Open Psychological Science</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/databrary/guide/edit/master/%s
+    edit: https://github.com/rogilmore/open-psych-sci/src/edit/master/%s
     download: ["pdf", "epub"]
 bookdown::pdf_book:
   includes:
