@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 8 Version control | Open Psychological Science</title>
+<meta name="author" content="Rick O. Gilmore">
+<meta name="description" content="8.1 What is it?   8.2 How does version control work   8.3 Tools for version control  8.3.1 On your local machine  8.3.1.1 Git A distributed software version control system Code base distributed...">
+<meta name="generator" content="bookdown 0.33 with bs4_book()">
+<meta property="og:title" content="Chapter 8 Version control | Open Psychological Science">
+<meta property="og:type" content="book">
+<meta property="og:description" content="8.1 What is it?   8.2 How does version control work   8.3 Tools for version control  8.3.1 On your local machine  8.3.1.1 Git A distributed software version control system Code base distributed...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 8 Version control | Open Psychological Science">
+<meta name="twitter:description" content="8.1 What is it?   8.2 How does version control work   8.3 Tools for version control  8.3.1 On your local machine  8.3.1.1 Git A distributed software version control system Code base distributed...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="include/css/style.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Open Psychological Science</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html"><span class="header-section-number">1</span> Preface</a></li>
+<li class="book-part">Why Open Psychological Science</li>
+<li><a class="" href="history.html"><span class="header-section-number">2</span> History</a></li>
+<li><a class="" href="promise.html"><span class="header-section-number">3</span> Promise</a></li>
+<li><a class="" href="components.html"><span class="header-section-number">4</span> Components</a></li>
+<li><a class="" href="ethics.html"><span class="header-section-number">5</span> Ethics</a></li>
+<li class="book-part">How to Conduct Open Psychological Science</li>
+<li><a class="" href="project-planning.html"><span class="header-section-number">6</span> Project planning</a></li>
+<li><a class="" href="preregistration.html"><span class="header-section-number">7</span> Preregistration</a></li>
+<li><a class="active" href="version-control.html"><span class="header-section-number">8</span> Version control</a></li>
+<li><a class="" href="scriptable-analysis.html"><span class="header-section-number">9</span> Scriptable analysis</a></li>
+<li><a class="" href="fair-data.html"><span class="header-section-number">10</span> FAIR data</a></li>
+<li><a class="" href="large-scale-replications.html"><span class="header-section-number">11</span> Large-scale replications</a></li>
+<li><a class="" href="open-protocols.html"><span class="header-section-number">12</span> Open protocols</a></li>
+<li><a class="" href="sharing-data-and-materials.html"><span class="header-section-number">13</span> Sharing data and materials</a></li>
+<li class="book-part">Collecting Data</li>
+<li><a class="" href="surveys.html"><span class="header-section-number">14</span> Surveys</a></li>
+<li><a class="" href="computer-based-tasks.html"><span class="header-section-number">15</span> Computer-based tasks</a></li>
+<li><a class="" href="reusing-data.html"><span class="header-section-number">16</span> Reusing data</a></li>
+<li class="book-part">Appendix</li>
+<li><a class="" href="installing_R.html"><span class="header-section-number">A</span> Installing R</a></li>
+<li><a class="" href="installing-python.html"><span class="header-section-number">B</span> Installing Python</a></li>
+<li><a class="" href="git-and-github-or-gitlab.html"><span class="header-section-number">C</span> Git and GitHub or GitLab</a></li>
+<li><a class="" href="command-line-tools.html"><span class="header-section-number">D</span> Command line tools</a></li>
+<li><a class="" href="references.html">References</a></li>
+</ul>
+
+        <div class="book-extra">
+          <p><a id="book-repo" href="https://github.com/rogilmore/open-psych-sci">View book source <i class="fab fa-github"></i></a></p>
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="version-control" class="section level1" number="8">
+<h1>
+<span class="header-section-number">8</span> Version control<a class="anchor" aria-label="anchor" href="#version-control"><i class="fas fa-link"></i></a>
+</h1>
+<div id="what-is-it" class="section level2" number="8.1">
+<h2>
+<span class="header-section-number">8.1</span> What is it?<a class="anchor" aria-label="anchor" href="#what-is-it"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="how-does-version-control-work" class="section level2" number="8.2">
+<h2>
+<span class="header-section-number">8.2</span> How does version control work<a class="anchor" aria-label="anchor" href="#how-does-version-control-work"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="tools-for-version-control" class="section level2" number="8.3">
+<h2>
+<span class="header-section-number">8.3</span> Tools for version control<a class="anchor" aria-label="anchor" href="#tools-for-version-control"><i class="fas fa-link"></i></a>
+</h2>
+<div id="on-your-local-machine" class="section level3" number="8.3.1">
+<h3>
+<span class="header-section-number">8.3.1</span> On your local machine<a class="anchor" aria-label="anchor" href="#on-your-local-machine"><i class="fas fa-link"></i></a>
+</h3>
+<div id="git" class="section level4" number="8.3.1.1">
+<h4>
+<span class="header-section-number">8.3.1.1</span> Git<a class="anchor" aria-label="anchor" href="#git"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>A <em>distributed</em> software version control system
+<ul>
+<li>Code base distributed across multiple machines</li>
+</ul>
+</li>
+<li>Developed by Linus Torvalds of Linux fame</li>
+<li>A database for keeping track of the history of changes in text files</li>
+<li>Open-source and platform/operating system agnostic</li>
+<li>A <code>repository</code> or <code>repo</code> is a collection of related text files</li>
+<li>A <code>commit</code> is a time/date-stamped ‘version’ of a set of text files.
+<ul>
+<li>Git keeps track of how versions differ.</li>
+<li>Each version gets its own unique ‘name’, e.g., <code>85c5f7a</code>
+</li>
+</ul>
+</li>
+<li>A <code>branch</code> is a part of a project, e.g., <code>main</code> or <code>testing_new_feature</code>.
+<ul>
+<li>Git keeps track of branch-specific histories.</li>
+</ul>
+</li>
+<li>Can <code>merge</code> branches or <code>revert</code> to earlier versions.</li>
+<li>Like MS Word’s track changes, but <em>not</em> automatically saved.
+<ul>
+<li><span class="red">I repeat, not automatically saved!</span></li>
+</ul>
+</li>
+<li>Git tutorial: <a href="https://www.w3schools.com/git/default.asp?remote=github" class="uri">https://www.w3schools.com/git/default.asp?remote=github</a>
+</li>
+</ul>
+</div>
+</div>
+<div id="for-collaboration" class="section level3" number="8.3.2">
+<h3>
+<span class="header-section-number">8.3.2</span> For collaboration<a class="anchor" aria-label="anchor" href="#for-collaboration"><i class="fas fa-link"></i></a>
+</h3>
+<div id="github" class="section level4" number="8.3.2.1">
+<h4>
+<span class="header-section-number">8.3.2.1</span> GitHub<a class="anchor" aria-label="anchor" href="#github"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>A commercial web service: <a href="https://github.com" class="uri">https://github.com</a>
+</li>
+<li><a href="https://blogs.microsoft.com/blog/2018/10/26/microsoft-completes-github-acquisition/">Acquired by Microsoft in 2018</a></li>
+<li>Use Git on your local machine(s), but share code with other people via the web</li>
+</ul>
+</div>
+<div id="gitlab" class="section level4" number="8.3.2.2">
+<h4>
+<span class="header-section-number">8.3.2.2</span> GitLab<a class="anchor" aria-label="anchor" href="#gitlab"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>GitHub not the only game in town</li>
+<li><a href="https://git.psu.edu" class="uri">https://git.psu.edu</a></li>
+<li>ROG wishes that PSU supported GitHub, too.
+<ul>
+<li>Why don’t we? It’s complicated.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="how-and-why-could-i-use-them" class="section level2" number="8.4">
+<h2>
+<span class="header-section-number">8.4</span> How and why could I use them?<a class="anchor" aria-label="anchor" href="#how-and-why-could-i-use-them"><i class="fas fa-link"></i></a>
+</h2>
+<div id="questions-to-ponder" class="section level3" number="8.4.1">
+<h3>
+<span class="header-section-number">8.4.1</span> Questions to ponder<a class="anchor" aria-label="anchor" href="#questions-to-ponder"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Do I make and edit text files?
+<ul>
+<li>e.g., data files (your data are text files, no?)</li>
+<li>R code, SPSS syntax, Python, MATLAB code</li>
+<li>HTML, JavaScript, CSS, Markdown, etc.</li>
+</ul>
+</li>
+<li>Do I (want to) share making and editing text files with other people?</li>
+<li>Do I want to keep track of the changes?</li>
+<li>Do I want to produce reproducible workflows and share them openly with other people?</li>
+</ul>
+</div>
+<div id="use-case-editing-text-on-github" class="section level3" number="8.4.2">
+<h3>
+<span class="header-section-number">8.4.2</span> Use Case: Editing text on GitHub<a class="anchor" aria-label="anchor" href="#use-case-editing-text-on-github"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>Visit the repo: <a href="https://github.com/gilmore-lab/2021-11-17-github/" class="uri">https://github.com/gilmore-lab/2021-11-17-github/</a>
+</li>
+<li>Click on the pencil icon to the upper right of the <code>README.md</code> file.</li>
+<li>Make a change, save it, and <em>commit</em> the change.</li>
+</ul>
+<div id="standard-workflow" class="section level4" number="8.4.2.1">
+<h4>
+<span class="header-section-number">8.4.2.1</span> Standard workflow<a class="anchor" aria-label="anchor" href="#standard-workflow"><i class="fas fa-link"></i></a>
+</h4>
+<ol start="0" style="list-style-type: decimal">
+<li>Create account on GitHub</li>
+<li>Go to your GitHub page or project/lab page</li>
+<li>Create a new repository</li>
+<li>
+<code>Clone</code> the repo to your local machine</li>
+<li>Edit the local copy; save, and <code>commit</code>
+</li>
+<li>
+<code>Push</code> the changed version back to GitHub</li>
+</ol>
+</div>
+</div>
+<div id="use-case-data-analysis" class="section level3" number="8.4.3">
+<h3>
+<span class="header-section-number">8.4.3</span> Use Case: Data analysis<a class="anchor" aria-label="anchor" href="#use-case-data-analysis"><i class="fas fa-link"></i></a>
+</h3>
+<ul>
+<li>I want to analyze some data and document my analysis workflow</li>
+<li>I want my workflow to be reproducible to me (and to others)</li>
+<li>I want to share my workflow with other people to be fully transparent</li>
+<li>I want to keep track of the history of my analyses</li>
+</ul>
+<div id="summary-of-basic-steps" class="section level4" number="8.4.3.1">
+<h4>
+<span class="header-section-number">8.4.3.1</span> Summary of basic steps<a class="anchor" aria-label="anchor" href="#summary-of-basic-steps"><i class="fas fa-link"></i></a>
+</h4>
+<ol style="list-style-type: decimal">
+<li>In your browser, create a repo on GitHub</li>
+<li>
+<code>Clone</code> the repo to your local machine</li>
+<li>In RStudio, create a new project</li>
+<li>Work in the project</li>
+<li>Save, commit, push (and repeat)</li>
+</ol>
+</div>
+<div id="create-a-repo" class="section level4" number="8.4.3.2">
+<h4>
+<span class="header-section-number">8.4.3.2</span> Create a repo<a class="anchor" aria-label="anchor" href="#create-a-repo"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="img/github-new-repo.png" width="900px" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="img/github-create-new-repo.png" width="800px" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="img/github-create-new-repo-2.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+<div id="clone-the-repo" class="section level4" number="8.4.3.3">
+<h4>
+<span class="header-section-number">8.4.3.3</span> Clone’ the repo<a class="anchor" aria-label="anchor" href="#clone-the-repo"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="img/github-clone-repo.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+<div id="create-an-rstudio-project" class="section level4" number="8.4.3.4">
+<h4>
+<span class="header-section-number">8.4.3.4</span> Create an RStudio project<a class="anchor" aria-label="anchor" href="#create-an-rstudio-project"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="img/rstudio-new-project.png" width="500px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-create-project-version-control.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-create-project-from-version-control-git.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-clone-git-repository.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+<div id="make-initial-commit" class="section level4" number="8.4.3.5">
+<h4>
+<span class="header-section-number">8.4.3.5</span> Make initial commit<a class="anchor" aria-label="anchor" href="#make-initial-commit"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="img/rstudio-git-tab-1.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-2.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-3.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-4.png" width="800px" style="display: block; margin: auto;"></div>
+<div id="what-is-.gitignore" class="section level5" number="8.4.3.5.1">
+<h5>
+<span class="header-section-number">8.4.3.5.1</span> What is <code>.gitignore</code>?<a class="anchor" aria-label="anchor" href="#what-is-.gitignore"><i class="fas fa-link"></i></a>
+</h5>
+<ul>
+<li>Tells git to ignore these files</li>
+<li>Ignore <code>*.Rproj</code> file–your settings are your own</li>
+<li>Ignore <code>.DS_store</code> files on Mac OS–your settings are your own</li>
+<li>Maybe ignore data files (to protect identities)–<span class="red">GitHub is public (unless you specify otherwise)</span>
+</li>
+</ul>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-5.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-6.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-7.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/rstudio-git-tab-8.png" width="800px" style="display: block; margin: auto;"></div>
+<hr>
+<div class="inline-figure"><img src="img/github-after-initial-commit.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+</div>
+<div id="pro-tips" class="section level4" number="8.4.3.6">
+<h4>
+<span class="header-section-number">8.4.3.6</span> Pro tips<a class="anchor" aria-label="anchor" href="#pro-tips"><i class="fas fa-link"></i></a>
+</h4>
+<ul>
+<li>Exclude your <code>.Rhistory</code> from version control.</li>
+<li>Exclude (and don’t use!) the <code>.RData</code> file
+<ul>
+<li>Regenerate all internal data states anew</li>
+<li>Avoid hidden dependencies in your code</li>
+</ul>
+</li>
+</ul>
+<hr>
+<div class="inline-figure"><img src="img/tools-project-options-general.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+<div id="edit-the-repo" class="section level4" number="8.4.3.7">
+<h4>
+<span class="header-section-number">8.4.3.7</span> Edit the repo<a class="anchor" aria-label="anchor" href="#edit-the-repo"><i class="fas fa-link"></i></a>
+</h4>
+<div class="inline-figure"><img src="img/rstudio-new-rmarkdown.png" width="800px" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="img/rstudio-new-analysis-1.png" width="800px" style="display: block; margin: auto;"></div>
+<div class="inline-figure"><img src="img/rstudio-new-analysis-2.png" width="800px" style="display: block; margin: auto;"></div>
+</div>
+</div>
+</div>
+<div id="lessons-learned" class="section level2" number="8.5">
+<h2>
+<span class="header-section-number">8.5</span> Lessons learned<a class="anchor" aria-label="anchor" href="#lessons-learned"><i class="fas fa-link"></i></a>
+</h2>
+<ul>
+<li>It’s hard to share a code base, data set, …</li>
+<li>Tension between what works inside a team and what is transparent to others</li>
+<li>Tension between working quickly and making robust and clear code</li>
+<li>It’s best to re-render your code to make sure it runs before quitting work.</li>
+<li>Be wary and especially careful with data about people</li>
+</ul>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="preregistration.html"><span class="header-section-number">7</span> Preregistration</a></div>
+<div class="next"><a href="scriptable-analysis.html"><span class="header-section-number">9</span> Scriptable analysis</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#version-control"><span class="header-section-number">8</span> Version control</a></li>
+<li><a class="nav-link" href="#what-is-it"><span class="header-section-number">8.1</span> What is it?</a></li>
+<li><a class="nav-link" href="#how-does-version-control-work"><span class="header-section-number">8.2</span> How does version control work</a></li>
+<li>
+<a class="nav-link" href="#tools-for-version-control"><span class="header-section-number">8.3</span> Tools for version control</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#on-your-local-machine"><span class="header-section-number">8.3.1</span> On your local machine</a></li>
+<li><a class="nav-link" href="#for-collaboration"><span class="header-section-number">8.3.2</span> For collaboration</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#how-and-why-could-i-use-them"><span class="header-section-number">8.4</span> How and why could I use them?</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#questions-to-ponder"><span class="header-section-number">8.4.1</span> Questions to ponder</a></li>
+<li><a class="nav-link" href="#use-case-editing-text-on-github"><span class="header-section-number">8.4.2</span> Use Case: Editing text on GitHub</a></li>
+<li><a class="nav-link" href="#use-case-data-analysis"><span class="header-section-number">8.4.3</span> Use Case: Data analysis</a></li>
+</ul>
+</li>
+<li><a class="nav-link" href="#lessons-learned"><span class="header-section-number">8.5</span> Lessons learned</a></li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+<li><a id="book-source" href="https://github.com/rogilmore/open-psych-sci/blob/master/13-version-control.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/rogilmore/open-psych-sci/edit/master/13-version-control.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Open Psychological Science</strong>" was written by Rick O. Gilmore. It was last built on 2023-03-08.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
-bibliography: [book.bib, packages.bib]
+bibliography: [include/bib/book.bib, include/bib/packages.bib]
 biblio-style: apalike
 link-citations: yes
 github-repo: rstudio/bookdown-demo
@@ -20,7 +20,7 @@ This book serves many purposes. Most important, it provides me a way to organize
 # automatically create a bib database for R packages
 knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
-), 'packages.bib')
+), 'include/bib/packages.bib')
 
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, 
                       message = FALSE,

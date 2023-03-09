@@ -1,5 +1,3 @@
-# (PART) How to Conduct Open Psychological Science {-}
-
 # Preregistration
 
 ## What is pre-registration?
